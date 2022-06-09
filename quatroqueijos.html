@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="assets/css/WOWSlider-about-us-1.css">
     <link rel="stylesheet" href="assets/css/WOWSlider-about-us-2.css">
     <link rel="stylesheet" href="assets/css/WOWSlider-about-us.css">
-    <script type="text/javascript" src="/assets/js/verificacep.js"></script> 
+    <script src="assets/js/verificacep.js">
+    </script> 
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
@@ -59,13 +60,13 @@
                     <p class="fs-4 text-center d-xxl-flex justify-content-xxl-center"><span style="color: rgb(33, 37, 41);">Insira seus dados para realizar o pedido</span></p>
                 </section>
                 <form class="text-center" method="get" action=".">
-                    <div class="mb-3"><input class="form-control" type="text" name="nome" placeholder="Nome completo" autofocus="" required=""></div>
-                    <div class="mb-3"><input class="form-control" type="tel" name="telefone" placeholder="Telefone" required=""></div>
-                    <div class="mb-3"><input class="form-control" type="text" id="cep" name="cep" placeholder="CEP" required="" value="" onblur="pesquisacep(this.value);"/></div>
-                    <div class="mb-3"><input class="form-control" type="text" id="rua" name="rua" placeholder="Rua" required=""></div>
-                    <div class="mb-3"><input class="form-control" type="text" name="bairro" placeholder="Bairro" required=""></div>
-                    <div class="mb-3"><input class="form-control" type="text" id="cidade" name="cidade" placeholder="Cidade" required=""></div>
-                    <div class="mb-3"><input class="form-control" type="text" id="uf" name="uf" placeholder="Estado" required=""></div>
+                    <div class="mb-3"><input class="form-control" type="text" name="nome" required placeholder="Nome completo" autofocus=""></div>
+                    <div class="mb-3"><input class="form-control" type="tel" name="telefone" required placeholder="Telefone"></div>
+                    <div class="mb-3"><input class="form-control" type="text" id="cep" name="cep" required placeholder="CEP" maxlength="9" onblur="pesquisacep(this.value);"></div>
+                    <div class="mb-3"><input class="form-control" type="text" id="rua" name="rua" required placeholder="Rua"></div>
+                    <div class="mb-3"><input class="form-control" type="text" id="bairro" name="bairro" required placeholder="Bairro"></div>
+                    <div class="mb-3"><input class="form-control" type="text" id="cidade" name="cidade" required placeholder="Cidade"></div>
+                    <div class="mb-3"><input class="form-control" type="text" id="uf" name="uf" required placeholder="Estado"></div>
                     <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="padding: 12px 12px;">Realizar pedido</button></div>
                 </form>
             </div>
