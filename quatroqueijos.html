@@ -59,7 +59,7 @@
                 <section class="m-auto position-relative py-4 py-xl-5">
                     <p class="fs-4 text-center d-xxl-flex justify-content-xxl-center"><span style="color: rgb(33, 37, 41);">Insira seus dados para realizar o pedido</span></p>
                 </section>
-                <form class="text-center" method="post" action="pagamento.html">
+                <form class="text-center" method="post" action="">
                     <div class="mb-3"><input class="form-control" type="text" id="nome" name="nome" required placeholder="Nome completo" autofocus=""></div>
                     <div class="mb-3"><input class="form-control" type="tel" id="telefone" name="telefone" required placeholder="Telefone"></div>
                     <div class="mb-3"><input class="form-control" type="text" id="cep" name="cep" required placeholder="CEP" maxlength="9" onblur="pesquisacep(this.value);"></div>
@@ -67,7 +67,7 @@
                     <div class="mb-3"><input class="form-control" type="text" id="bairro" name="bairro" required placeholder="Bairro"></div>
                     <div class="mb-3"><input class="form-control" type="text" id="cidade" name="cidade" required placeholder="Cidade"></div>
                     <div class="mb-3"><input class="form-control" type="text" id="uf" name="uf" required placeholder="Estado"></div>
-                    <div class="mb-3"><button class="btn btn-primary d-block w-100" onclick="" type="submit" style="padding: 12px 12px;">Realizar pedido</button></div>
+                    <div class="mb-3"><button class="btn btn-primary d-block w-100" onclick="enviar();" type="submit" style="padding: 12px 12px;">Realizar pedido</button></div>
                 </form>
             </div>
         </div>
