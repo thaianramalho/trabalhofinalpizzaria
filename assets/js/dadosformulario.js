@@ -12,11 +12,12 @@ const cidade = document.querySelector("#cidade");
 
 const uf = document.querySelector("#uf");
 
+console.log(nome.value, telefone.value, cep.value, rua.value, bairro.value, cidade.value, uf.value);
+
 function enviar(){
     if ((nome.value != '')&&(telefone.value != '')&&(cep.value != '')){
-    window.open('pagamento.html', '_self');
-    // console.log(nome.value, telefone.value, cep.value, rua.value, bairro.value, cidade.value, uf.value);
+    console.log(nome.value, telefone.value, cep.value, rua.value, bairro.value, cidade.value, uf.value);
 }
 else{
-    alert('preencha todos os campos')
+    alert('Preencha todos os campos!')
 }};

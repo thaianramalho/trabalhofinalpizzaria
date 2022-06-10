@@ -24,9 +24,7 @@ function limpa_formulário_cep() {
     function pesquisacep(valor) {
 
         //Nova variável "cep" somente com dígitos.
-        console.log(valor);
         var cep = valor.replace(/\D/g, '');
-        console.log(cep);
 
         //Verifica se campo cep possui valor informado.
         if (cep != "") {
@@ -38,10 +36,10 @@ function limpa_formulário_cep() {
             if(validacep.test(cep)) {
 
                 //Preenche os campos com "..." enquanto consulta webservice.
-                document.getElementById('rua').value="...";
-                document.getElementById('bairro').value="...";
-                document.getElementById('cidade').value="...";
-                document.getElementById('uf').value="...";
+                document.getElementById('rua').value="Consultando CEP...";
+                document.getElementById('bairro').value="Consultando CEP...";
+                document.getElementById('cidade').value="Consultando CEP...";
+                document.getElementById('uf').value="Consultando CEP...";
 
                 //Cria um elemento javascript.
                 var script = document.createElement('script');
