@@ -1,5 +1,5 @@
 (function() {
-  "use strict"; // Start of use strict
+  "use strict";
 
   var mainNav = document.querySelector('#mainNav');
 
@@ -15,7 +15,7 @@
       
       var navbarItems = navbarCollapse.querySelectorAll('a');
       
-      // Closes responsive menu when a scroll trigger link is clicked
+      
       for (var item of navbarItems) {
         item.addEventListener('click', function (event) {
           collapse.hide();
@@ -23,7 +23,7 @@
       }
     }
 
-    // Collapse Navbar
+    
     var collapseNavbar = function() {
 
       var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
